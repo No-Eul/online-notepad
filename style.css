@@ -1,0 +1,49 @@
+body {
+	margin: 0;
+	font-size: 9pt;
+	font-family: "Malgun Gothic";
+}
+
+header {
+	border-bottom: 2px solid #F0F0F0;
+}
+
+#titlebar {
+	margin: 0;
+	padding: 7px;
+	display: flex;
+	gap: 5px;
+}
+
+#titlebar > * {
+	user-select: none;
+}
+
+#menubar {
+	display: flex;
+}
+
+.menu {
+	border: thin solid transparent;
+	user-select: none;
+	padding: 1px 5px;
+}
+
+.menu:hover {
+	background-color: #E5F3FF;
+	border-color: #CCE8FF;
+}
+
+.menu:focus {
+	background-color: #CCE8FF;
+	border-color: #99D1FF;
+}
+
+#notepad {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	border: unset;
+	outline: unset;
+	overflow-y: scroll;
+}
